@@ -1048,6 +1048,9 @@ function updateConsole (q) {
 }
 
 
+function updateBackend() {
+	console.log("I would update the mongo connection here");
+}
 
 
 function updateMainTextSpans() {

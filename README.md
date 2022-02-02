@@ -5,6 +5,9 @@ Play it here: https://www.taylorcalderone.com/minites/launcher.html
 
 # Docker instructions
 docker build -t minites .
+
 docker-compose up
+
 ...
+
 docker-compose down
