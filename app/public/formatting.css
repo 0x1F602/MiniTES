@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: monaco;
-	src: url('Monaco.ttf');
+	src: url('fonts/Monaco.ttf');
 }
 
 @font-face {
 	font-family: courier;
-	src: url('Courier.ttf');
+	src: url('fonts/Courier.ttf');
 }
 
 body {

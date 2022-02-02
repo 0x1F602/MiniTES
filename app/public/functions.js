@@ -373,7 +373,7 @@ function updateGameplayClock () {
 // Switch Themes
 function changeTheme (q) {
 	cow.cssDefaultTheme = q;
-	document.getElementById('loadCSSThemeHere').innerHTML = '<link rel="stylesheet" href="theme' + q + '.css">';
+	document.getElementById('loadCSSThemeHere').innerHTML = '<link rel="stylesheet" href="themes/theme' + q + '.css">';
 	// Make the selected theme fullBrightText
 	document.getElementById('BlackThemeText').className = 'fadedText3 clickable';
 	document.getElementById('WhiteThemeText').className = 'fadedText3 clickable';
@@ -391,7 +391,7 @@ function changeTheme (q) {
 // Load Default theme onLoad
 function loadDefaultOptions () {
 	// Themes
-	document.getElementById('loadCSSThemeHere').innerHTML = '<link rel="stylesheet" href="theme' + cow.cssDefaultTheme + '.css">';
+	document.getElementById('loadCSSThemeHere').innerHTML = '<link rel="stylesheet" href="themes/theme' + cow.cssDefaultTheme + '.css">';
 	document.getElementById(cow.cssDefaultTheme+'ThemeText').className = 'fullBrightText';
 	// Respawn location
 	if (cow.respawnAtVieda == true) { document.getElementById('textRespawnAtVieda').className = 'fullBrightText'; }
@@ -1242,37 +1242,6 @@ function updateEXPProgressBars() {
 
 
 function preloadStuff() {
-	function load(filename) {
-	    var xmlhttp;
-	    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-	        xmlhttp = new XMLHttpRequest();
-	    } else { // code for IE6, IE5
-	        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-	    }
-	    xmlhttp.onreadystatechange = function() {
-	        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				var q = document.createElement('span');	// Extra stuff to make IE happy. Fuck IE
-				q.setAttribute('id', 'loadSound');		//
-				q.setAttribute('class', 'invisible');	//
-				document.body.appendChild(q);			//
-	            document.getElementById("loadSound").innerHTML = '<embed src="' + filename + '" controller="1" autoplay="0" autostart="0" />';
-	        }
-	    }
-	    xmlhttp.open("GET", filename, true);
-	    xmlhttp.send();
-	}
-
-	// Fonts
-	load('fonts/Courier.ttf');
-	load('fonts/Monaco.ttf');
-	// Themes
-	load('themes/themeBlack.css');
-	load('themes/themeAmber.css');
-	load('themes/themeBios.css');
-	load('themes/themeBlue.css');
-	load('themes/themeMatrix.css');
-	load('themes/themePurple.css');
-	load('themes/themeWhite.css');
 }
 
 
