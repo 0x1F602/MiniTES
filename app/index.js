@@ -22,4 +22,4 @@ app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(80);
-console.log('listening on port 3000');
+console.log('listening');
