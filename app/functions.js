@@ -1260,17 +1260,18 @@ function preloadStuff() {
 	}
 
 	// Fonts
-	load('Courier.ttf');
-	load('Monaco.ttf');
+	load('fonts/Courier.ttf');
+	load('fonts/Monaco.ttf');
 	// Themes
-	load('themeBlack.css');
-	load('themeAmber.css');
-	load('themeBios.css');
-	load('themeBlue.css');
-	load('themeMatrix.css');
-	load('themePurple.css');
-	load('themeWhite.css');
+	load('themes/themeBlack.css');
+	load('themes/themeAmber.css');
+	load('themes/themeBios.css');
+	load('themes/themeBlue.css');
+	load('themes/themeMatrix.css');
+	load('themes/themePurple.css');
+	load('themes/themeWhite.css');
 }
+
 
 
 
